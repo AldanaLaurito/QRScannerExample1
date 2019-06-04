@@ -24,7 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Wiring up the Button
-        //Button();
+        /*
+            This sets up the event handler (onClick) for when the user presses the button.
+            When they do that, we want to load the bar code, process it for data,
+            and write that data to the TextView.
+        */
         Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,21 +92,4 @@ public class MainActivity extends AppCompatActivity {
         txtView.setText(thisCode.rawValue);
 
     }
-
-    //Decode the Barcode
-    /*
-        This sets up the event handler (onClick) for when the user presses the button.
-        When they do that, we want to load the bar code, process it for data,
-        and write that data to the TextView.
-    */
-    private void Button(){
-        Button btn = (Button) findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
-    }
-
-
 }
