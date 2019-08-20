@@ -25,7 +25,7 @@ public class User {
 
     private String mail;
 
-    private Date bithdate;
+    private Date birthdate;
 
     private int level;
 
